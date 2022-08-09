@@ -9,7 +9,7 @@ export class ArticlesController {
   constructor(private readonly articlesService: ArticlesService) {}
 
   @Get()
-  findAll(): Observable<AxiosResponse<Story[]>> {
+  findAll(): Observable<Story[]> {
     return this.articlesService.findAll();
   }
 }
